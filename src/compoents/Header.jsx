@@ -34,9 +34,6 @@ export default function Header() {
 									<li><Link to={'/about'}>About</Link></li>
 									<li><Link to={'/contact'}>Contact</Link></li>
 									<li class="cart"><Link to={'/cart'}><button type="button" class="btn btn-light position-relative"><i class="fa-solid fa-cart-shopping"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{count.length}</span></button>Cart [{count.length}]</Link></li>
-									{/* <li class="cart"><Link to={'/cart'}><i class="icon-shopping-cart">
-										</i><i class="fa-solid fa-cart-shopping"></i>
-										 Cart [{count.length}]</Link></li> */}
 									
 									<li><Link to={'/adminlogin'}>Admin Login</Link></li>
 								</ul>
