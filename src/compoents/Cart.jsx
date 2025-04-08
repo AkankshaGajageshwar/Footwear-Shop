@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 export default function Cart() {
 
   const dispatch = useDispatch();
+  const [couponCode, setCouponCode] = useState('');
+  const [discount, setDiscount]= useState(0);
 
   var productTotal = 0;
 
@@ -14,6 +16,35 @@ export default function Cart() {
     // console.log(state.cart.products);
     return state.cart.products
   });
+
+  function applyCoupon(e) {
+    e.preventDefault(); // prevent form from reloading the page
+  
+    const code = couponCode.trim().toUpperCase(); // make sure code is clean
+  
+    if (code === "SAVE10") {
+      setDiscount(0.10); // 10% discount
+    } else if (code === "SAVE50") {
+      setDiscount(50); // ₹50 flat discount
+    } else {
+      alert("Invalid coupon code");
+      setDiscount(0);
+    }
+  }
+  let discountAmount = 0;
+
+// if it's a % discount
+if (discount > 0 && discount < 1) {
+  discountAmount = productTotal * discount;
+}
+// if it's a flat ₹ discount
+else if (discount >= 1) {
+  discountAmount = discount;
+}
+
+const finalTotal = productTotal - discountAmount;
+
+  
 
   return (
     <div>
@@ -108,10 +139,10 @@ export default function Cart() {
               <div class="total-wrap">
                 <div class="row">
                   <div class="col-sm-8">
-                    <form action="#">
+                    <form onSubmit={applyCoupon}>
                       <div class="row form-group">
                         <div class="col-sm-9">
-                          <input type="text" name="quantity" class="form-control input-number" placeholder="Your Coupon Number..." />
+                          <input type="text" value={couponCode} onChange={(e) => setCouponCode(e.target.value)} placeholder="Enter Coupon Code" name="quantity" class="form-control input-number" />
                         </div>
                         <div class="col-sm-3">
                           <input type="submit" value="Apply Coupon" class="btn btn-primary" />
@@ -122,9 +153,9 @@ export default function Cart() {
                   <div class="col-sm-4 text-center">
                     <div class="total">
                       <div class="sub">
-                        <p><span>Subtotal:</span> <span>{productTotal} /-</span></p>
+                        <p><span>Subtotal:</span> <span>₹ {productTotal} /-</span></p>
                         {/* <p><span>Delivery:</span> <span>50/-</span></p> */}
-                        <p><span>Discount:</span> <span>{ }</span></p>
+                        <p><span>Discount:</span> <span>₹ {discountAmount.toFixed(2)}</span></p>
                       </div>
                       <div class="grand-total">
                         <p><span><strong>Total:</strong></span> <span>{productTotal - 50}</span></p>

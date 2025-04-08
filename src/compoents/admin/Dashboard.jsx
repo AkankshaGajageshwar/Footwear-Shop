@@ -7,7 +7,7 @@ export default function Dashboard() {
     <div className="container">
        <div className="row mt-4">
          <div className="col-lg-4">
-           <div class="card" style={{ width: "18rem", bordeRadius: "40px", backgroundColor: "rgb(136, 200, 188)" }}>
+           <div class="card" style={{ width: "18rem", borderRadius: "40px", backgroundColor: "rgb(136, 200, 188)" }}>
 
              <div class="card-body">
                <h5 className='display-5 fw-bold text-center'>
@@ -24,7 +24,7 @@ export default function Dashboard() {
 
          </div>
          <div className="col-lg-4">
-           <div class="card" style={{ width: "18rem", bordeRadius: "40px", backgroundColor: "rgb(136, 200, 188)" }}>
+           <div class="card" style={{ width: "18rem", borderRadius: "40px", backgroundColor: "rgb(136, 200, 188)" }}>
 
              <div class="card-body">
                <h5 className='display-5 fw-bold text-center'>
@@ -42,7 +42,7 @@ export default function Dashboard() {
            </div>
          </div>
          <div className="col-lg-4">
-           <div class="card" style={{ width: "18rem", bordeRadius: "40px", backgroundColor: "rgb(136, 200, 188)" }}>
+           <div class="card" style={{ width: "18rem", borderRadius: "40px", backgroundColor: "rgb(136, 200, 188)" }}>
 
              <div class="card-body">
                <h5 className='display-5 fw-bold text-center'>

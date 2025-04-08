@@ -23,8 +23,8 @@ export default function Checkout() {
             // "order_id": "12456", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
             "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
-                "name": "Gaurav Kumar", //your customer's name
-                "email": "gaurav.kumar@example.com",
+                "name": "Akanksha Gajageshwar", //your customer's name
+                "email": "gajageshwarakanksha@gmail.com",
                 "contact": "9000090000" //Provide the customer's phone number for better conversion rates 
             },
             "notes": {
@@ -144,46 +144,13 @@ export default function Checkout() {
                                                 <span>50.00/-</span>
                                             </li>
                                             <li><span>Order Total</span>
-                                                <span>{productTotal - 50}/-</span>
+                                                <span>{productTotal + 50}/-</span>
                                             </li></ul>
                                     </div>
                                 </div>
                                 <div class="w-100">
                                 </div>
-                                {/* <div class="col-md-12">
-                                    <div class="cart-detail">
-                                        <h2>Payment Method</h2>
-                                        <div class="form-group">
-                                            <div class="col-md-12">
-                                                <div class="radio">
-                                                    <label><input type="radio" name="optradio" /> Direct Bank Tranfer</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-12">
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" name="optradio" /> Check Payment</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-12">
-                                                <div class="radio">
-                                                    <label><input type="radio" name="optradio" /> Paypal</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-12">
-                                                <div class="checkbox">
-                                                    <label><input type="checkbox" value="checked" /> I have read and accept the terms and conditions</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> */}
+                              
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-center">

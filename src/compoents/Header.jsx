@@ -19,7 +19,8 @@ export default function Header() {
 								<form action="#" class="search-wrap">
 									<div class="form-group">
 										<input type="search" class="form-control search" placeholder="Search" />
-										<button class="btn btn-primary submit-search text-center" type="submit"><i class="icon-search"></i></button>
+										<button class="btn btn-primary submit-search text-center" type="submit"><i className="fas fa-search"></i>
+										</button>
 									</div>
 								</form>
 							</div>
@@ -28,7 +29,7 @@ export default function Header() {
 							<div class="col-sm-12 text-left menu-1">
 								<ul>
 								<li class="active">
-									<Link to={'/'}><img src={require('../assets/images/logo_main.jpg')} alt="" style={{width:"150px"}}/></Link></li>
+									<Link to={'/'}><img src={require('../assets/images/logo_main.jpg')} alt="" style={{width:"80px"}}/></Link></li>
 									<li class="active"><Link to={'/'}>Home</Link></li>
 									<li><Link to={'/allproducts'}>All Products</Link></li>
 									<li><Link to={'/about'}>About</Link></li>

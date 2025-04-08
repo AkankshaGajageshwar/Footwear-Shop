@@ -1,5 +1,8 @@
 import './App.css';
 import './assets/css/style.css';
+import './assets/css/magnific-popup.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import './assets/css/magnific-popup.css';
 import Header from './compoents/Header';
 import Footer from './compoents/Footer';
 import Home from './compoents/Home';
@@ -16,6 +19,8 @@ import AdminLogin from './compoents/admin/AdminLogin';
 import AddProduct from './compoents/admin/AddProduct';
 import Admin from './compoents/Admin';
 import Checkout from './compoents/Checkout';
+
+
 
 
 function App() {
