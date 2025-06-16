@@ -1,4 +1,5 @@
-import './App.css';
+
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './assets/css/style.css';
 import './assets/css/magnific-popup.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';

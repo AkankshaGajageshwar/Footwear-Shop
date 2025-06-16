@@ -43,7 +43,7 @@ export default function Product() {
             <div className="col">
               <p className='bread'>
                 <span>
-                  <a href="">ADMIN</a>
+                  <Link to={"/admin"}>ADMIN</Link>
                 </span>
                 /
                 <span>

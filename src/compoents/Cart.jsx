@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../assets/css/style.css';
 import { useSelector } from 'react-redux';
 import { incrementQuantity, decrementQuantity, removeProduct, allTotal } from '../state/cartSlice';
 import { useDispatch } from 'react-redux';
@@ -71,7 +72,7 @@ const finalTotal = productTotal - discountAmount;
           <div class="row row-pb-lg">
             <div class="col-md-12">
               <div class="product-name d-flex">
-                <div class="one-forth text-left px-4">
+                <div class="one-forth text-start px-4">
                   <span>Product Details</span>
                 </div>
                 <div class="one-eight text-center">

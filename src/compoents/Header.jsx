@@ -1,23 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import '../assets/css/style.css';
 
 export default function Header() {
 
 	const count = useSelector((state) => state.cart.products)
 	return (
-		<div>
-			<nav class="colorlib-nav" role="navigation">
-				<div class="top-menu">
-					<div class="container">
-						<div class="row">
-						<div class="col-sm-7 col-md-9">
+		<div id="page">
+			<nav className="colorlib-nav" role="navigation">
+				<div className="top-menu">
+					<div className='container'>
+						<div className="row">
+						<div className="col-sm-7 col-md-9">
 							<div id="colorlib-logo"><Link to={'/'}>MyFootwear</Link></div>
 						</div>
-
-							<div class="col-sm-5 col-md-3">
+							<div className="col-sm-5 col-md-3">
 								<form action="#" class="search-wrap">
-									<div class="form-group">
+									<div className="form-group">
 										<input type="search" class="form-control search" placeholder="Search" />
 										<button class="btn btn-primary submit-search text-center" type="submit"><i className="fas fa-search"></i>
 										</button>
@@ -25,24 +25,25 @@ export default function Header() {
 								</form>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-12 text-left menu-1">
+						<div className="row">
+							<div className="col-sm-12 text-start menu-1">
 								<ul>
-								<li class="active">
+								<li className="active">
 									<Link to={'/'}><img src={require('../assets/images/logo_main.jpg')} alt="" style={{width:"80px"}}/></Link></li>
 									<li class="active"><Link to={'/'}>Home</Link></li>
 									<li><Link to={'/allproducts'}>All Products</Link></li>
 									<li><Link to={'/about'}>About</Link></li>
 									<li><Link to={'/contact'}>Contact</Link></li>
-									<li class="cart"><Link to={'/cart'}><button type="button" class="btn btn-light position-relative"><i class="fa-solid fa-cart-shopping"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{count.length}</span></button>Cart [{count.length}]</Link></li>
+									<li className="cart"><Link to={'/cart'}><button type="button" class="btn btn-light position-relative"><i className="fa-solid fa-cart-shopping"></i><span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{count.length}</span></button>Cart [{count.length}]</Link></li>
 									
 									<li><Link to={'/adminlogin'}>Admin Login</Link></li>
 								</ul>
 							</div>
 						</div>
-					</div>
+						</div>
+					
 				</div>
-				<div class="sale">
+				<div className="sale">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-8 offset-sm-2 text-center">

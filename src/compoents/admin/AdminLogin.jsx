@@ -12,22 +12,11 @@ export default function AdminLogin() {
   useEffect(() => {
     const credential = localStorage.getItem("user");
 
-    if( credential != null)
-      {
-        navigate("/admin")
-      }
-  },[]);
-
-
-  // useEffect(() => {
-  //   const credential = localStorage.getItem("user");
-
-  //   if (credential != null) {
-  //     navigate("/admin")
-  //   }
-  // }, []);
-
-  function handleLogin(e) {
+    if (credential != null) {
+        navigate("/admin");
+    }
+}, []);
+function handleLogin(e) {
     e.preventDefault();
 
     // console.log(user, password)

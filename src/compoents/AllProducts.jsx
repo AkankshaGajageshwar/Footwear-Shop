@@ -1,4 +1,5 @@
 import axios from 'axios';
+import '../assets/css/style.css';
 import React, { useEffect, useState } from 'react';
 import { addProductToCart } from "../state/cartSlice";
 import { useDispatch } from 'react-redux';

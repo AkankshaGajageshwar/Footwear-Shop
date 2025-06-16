@@ -14,21 +14,21 @@ export const cartSlice = createSlice({
         },
         incrementQuantity: (state, action) => {
             const productId = action.payload
-            const findProduct = state.products.find((item) => item.id == productId)
+            const findProduct = state.products.find((item) => item.id === productId)
             if (findProduct) {
                 findProduct.quantity += 1
             }
         },
         decrementQuantity: (state, action) => {
             const productId = action.payload
-            const findProduct = state.products.find((item) => item.id == productId)
+            const findProduct = state.products.find((item) => item.id === productId)
             if (findProduct && findProduct.quantity > 1) {
                 findProduct.quantity -= 1
             }
         },
         removeProduct: (state, action) => {
             const productId = action.payload
-            state.products = state.products.filter((item) => item.id != productId)
+            state.products = state.products.filter((item) => item.id !== productId)
         },
         allTotal: (state, action) => {
             state.allTotal = action.payload

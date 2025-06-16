@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import '../assets/css/style.css';
 
 export default function Footer() {
   return (
-    <div>
+    <div >
       <footer id="colorlib-footer" role="contentinfo">
 			<div class="container">
 				<div class="row row-pb-md">
@@ -11,10 +12,10 @@ export default function Footer() {
 						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
 						<p>
 							<ul class="colorlib-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i className="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#"><i className="fab fa-dribbble"></i></a></li>
 							</ul>
 						</p>
 					</div>
@@ -78,6 +79,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</div>
 		</footer>
+		<div class="gototop js-top active">
+		<a href="#" class="js-gotop"><i className="fas fa-arrow-up"></i>
+		</a>
+	</div>
     </div>
   )
 }
