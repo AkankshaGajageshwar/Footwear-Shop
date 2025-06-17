@@ -13,7 +13,7 @@ export default function Header() {
 					<div className='container'>
 						<div className="row">
 						<div className="col-sm-7 col-md-9">
-							<div id="colorlib-logo"><Link to={'/'}>MyFootwear 11</Link></div>
+							<div id="colorlib-logo"><Link to={'/'}>MyFootwear</Link></div>
 						</div>
 							<div className="col-sm-5 col-md-3">
 								<form action="#" class="search-wrap">
